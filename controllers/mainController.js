@@ -8,9 +8,7 @@ var app = angular.module('hospiceProject' );
 		$scope.calcPayment = peopleService.mileageCalc(miles);
 	};
 	$scope.isOnVisitList = function(patientName) {
-		$scope.patientName = peopleService.isOnVisitList(patientName)
+		//$scope.patientName = peopleService.isOnVisitList(patientName);
 		console.log("on scope", $scope.patientName);
 	}
 });
-  
-
