@@ -9,6 +9,8 @@ var app = angular.module('hospiceProject' );
 	};
 	$scope.isOnVisitList = function(patientName) {
 		$scope.patientName = peopleService.isOnVisitList(patientName)
+		console.log("on scope", $scope.patientName);
 	}
 });
   
+

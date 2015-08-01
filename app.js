@@ -6,9 +6,9 @@ app.config(function($routeProvider){
         templateUrl: 'visitTemplate.html',
         controller: 'mainCtrl'
       }).
-      // when('/phones/:phoneId', {
-      //   templateUrl: 'partials/phone-detail.html',
-      //   controller: 'PhoneDetailCtrl'
+      //  when('/phones/assessment', {
+      //   templateUrl: 'assessmentTemplate.html',
+      //  controller: 'mainCtrl'
       // }).
       otherwise({
         redirectTo: '/home'
