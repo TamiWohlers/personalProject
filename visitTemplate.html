@@ -1,0 +1,18 @@
+<form> Date of Visit:<input type="date" name="visit">
+    </form>
+
+<h3> Patient List: </h3>
+
+    
+    <div class="patientList" ng-repeat = "patient in patientData">{{patient.person}} {{patient.diagnosis}}</div>
+    <input placeholder="Patient name" type="text" ng-model= "patientName"></input>
+    <button ng-click="isOnVisitList(patientName)"></calcReim>Submit</button>
+    <div class="patient">Selected patient: {{patienttName}}</div>
+    <div class='mileage calculation'>
+    	<input placeholder="Mileage" type = "value" ng-model = "miles"></input>
+    	<button ng-click="mileageCalc(miles)"></calcReim>Submit</button>  
+    	<div class="money">reimbursement: ${{calcPayment}}</div>	
+    </div>	
+      
+
+  

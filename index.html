@@ -1,0 +1,29 @@
+<!DOCTYPE>
+<html ng-app="hospiceProject">
+<head>
+	<title></title>
+</head>
+<body>
+	<!-- <h3> Patient List: </h3>
+    <div class="patientList" ng-repeat = "patient in patientData">{{patient.person}} {{patient.diagnosis}}</div>
+    
+    <div class='mileage calculation'>
+    	<input placeholder="Mileage" type = "value" ng-model = "miles">
+    	<button ng-click="mileageCalc(miles)"></calcReim>Submit</button>  
+    	<div class="money">{{calcPayment}}</div>	
+    </div>
+    <form> Date of Visit:
+      <input type="date" name="visit">
+    </form> -->
+    <ng-view></ng-view>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
+    <script src="https://code.angularjs.org/1.4.3/angular-route.js"></script>	
+    <script src='app.js'></script>
+    <script src='services/equipmentService.js'></script>
+    <script src='services/medicationService.js'></script>
+    <script src='controllers/mainController.js'></script>
+    <script src='controllers/equipmentController.js'></script>
+    <script src='controllers/medicationController.js'></script>
+    <script src="services/peopleService.js"></script>
+</body>
+</html>
