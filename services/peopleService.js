@@ -20,11 +20,14 @@ app.service('peopleService', function(){
     }
 
     this.isOnVisitList = function(patientName) {
-      for (var i = 0; i < this.patientData.length; i++) {
-        if(patientName == this.patientData[i]) {
+
+      for (var i = 0; i < patientData.length; i++) {
+        console.log(patientData[i].person)
+        if(patientName == patientData[i].person) {
           return patientName;
         }
         else {
+          console.log(patientName);
           return 'Patient not found'
         }
     }
